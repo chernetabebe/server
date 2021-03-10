@@ -1,0 +1,156 @@
+post http://localhost:9000/books
+Content-Type: application/json
+
+{
+    "name":"hadis",
+    "title":"fiker"
+}
+
+###
+ get http://localhost:9000/books
+
+ ###
+post http://localhost:9000/books
+Content-Type: application/json
+
+{
+    "name":"yesmak werku",
+    "title":"dertogada"
+}
+###
+post http://localhost:9000/books
+Content-Type: application/json
+
+{
+    "name":"  erculus",
+    "email":"ayele@gmail.com",
+    "password":"ayeeeeee"
+}
+
+###
+
+ get http://localhost:9000/books/
+
+
+###
+
+
+post http://localhost:9000/books
+Content-Type: application/json
+
+{
+    "name":"  erculus",
+    "email":"ayele@gmail.com",
+    "password":"ayeeeeee"
+}
+###
+
+delete http://localhost:9000/books
+
+###
+post http://localhost:9000/books
+Content-Type: application/json
+
+{
+    "name":"  Chali Dugho",
+    "email":"harme654@gmail.com",
+    "password":"chaliye77"
+}
+
+###
+ delete http://localhost:9000/books/5ffb39a04f3b6117186f062a
+
+ ###
+
+post http://localhost:9000/books
+Content-Type: application/json
+
+{
+    "name":" hermon desalegn",
+    "email":"hermon@gmail.com",
+    "password":"hermo97"
+}
+###
+delete http://localhost:9000/books/600d53b0fc550f1b38855bb5
+
+###
+
+ get http://localhost:9000/books
+
+
+###
+post http://localhost:9000/books
+Content-Type: application/json
+
+{
+    "name":" hermon desalegn",
+    "email":"hermon@gmail.com",
+    "password":"hermo97"
+}
+###
+
+ get http://localhost:9000/books
+
+
+###
+post http://localhost:9000/books
+Content-Type: application/json
+
+{
+    "name":" cheru desalegn",
+    "email":"hermon@gmail.com",
+    "password":"hermo97"
+}
+###
+ get http://localhost:9000/books
+
+ ###
+
+
+ POST  http://localhost:9000/books
+Content-Type: application/json
+
+{
+    "name":" seni abebe",
+    "email":"seni@gmail.com",
+    "password":"senu6667"
+}
+
+###
+post http://localhost:9000/books
+Content-Type: application/json
+
+
+{
+    "name":" seni abebe",
+    "email":"seni@gmail.com",
+    "password":"senu6667"
+}
+###
+ post http://localhost:9000/books/
+ Content-Type: application/json
+
+ {
+     "name": "chernet abebe",
+     "email": "cherulast123@gmail.com",
+     "password": "cherulast@54321$67890#$"
+ }
+
+
+ ###
+   
+
+get http://localhost:9000/books
+
+###
+ patch http://localhost:9000/books/6048a33c993d822150b2e80c
+ Content-Type: application/json
+
+ {
+     "name": "Chernet Abebe",
+     "email": "cherulast123@gmail.com",
+     "password": "cherulast@54321$67890#$"
+ }
+
+###
+delete http://localhost:9000/books/6048a27c993d822150b2e805
