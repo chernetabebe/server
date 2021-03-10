@@ -1,11 +1,10 @@
 const express = require("express");
 const app = express();
 const mongoose = require("mongoose");
-//http = require('http');
 const cors = require("cors");
 const bodyParser = require("body-parser");
 require('dotenv/config');
-const nodemailer = require("nodemailer");
+
 
 
 app.use(express.urlencoded({extended: false}))
@@ -48,40 +47,6 @@ mongoose.connect(
 
 //serving static files
 app.use(express.static("public"));
-
-// app.use((req, res, next) => {
-//   //console.log(req.headers);
-//   res.statusCode = 200;
-//   res.setHeader('Content-Type', 'text/html/');
-//   //res.end("hellow world");
-//   next();
-// });
-
-//sending mail to uses who signed up
-let transporter = nodemailer.createTransport({
-  service: "gmail",
-  auth: {
-    user: "cherulast123@gmail.com",
-    pass: "cherulast@54321$67890#"
-  }
-});
-
-let mailoption = {
-  from : "cherulast123@gmail.com",
-  to: "ayaaba366@gmail.com",
-  subject : "testing",
-  text: "it works love nodejs"
-}
-
-transporter.sendMail(mailoption, function(err,data){
-  if (err){
-    console.log("sucess")
-  }else{
-    console.log("failed")
-  }
-})
-
-
 
 
 
